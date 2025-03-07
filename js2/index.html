@@ -6,35 +6,44 @@
     <title>JS Sample 2</title>
 </head>
 <body>
-    <h1>Text Concatenator</h1>
+    <h1>JS Exercise 2</h1>
     <table>
         <tr>
             <td>
-                <label for="num1">First String:</label>
+                <label for="num1">First Name:</label>
             </td>
             <td>
-                <input type="text" name="num1" id="num1" placeholder="Enter first string">
+                <input type="text" name="num1" id="num1" placeholder="Enter first name">
             </td>
         </tr>
         <tr>
             <td>
-                <label for="num2">Second String:</label>
+                <label for="num2">Middle Name:</label>
             </td>
             <td>
-                <input type="text" name="num2" id="num2" placeholder="Enter second string">
+                <input type="text" name="num2" id="num2" placeholder="Enter middle name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="lName">Last Name:</label>
+            </td>
+            <td>
+                <input type="text" name="lName" id="lName" placeholder="Enter last name">
             </td>
         </tr>
         <tr>
             <td></td>
             <td>
-                <button onclick="concatenate()">Concatenate</button>
+                <button onclick="concatenate()">Generate Full Name</button>
                 <button onclick="clearEntries()">Clear Entries</button>
             </td>
         </tr>
     </table>
 
-    <p style="font-weight: bold;">Concatenated Value:</p>
-    <span id="sum"></span>
+    <p>Full Name:</p>
+    <span id="sum" style="font-weight: bold;"></span>
+    <span id="lastName" style="font-weight: bold;"></span>
 
     <script src="main.js"></script>
 </body>

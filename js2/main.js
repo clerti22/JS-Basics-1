@@ -1,13 +1,18 @@
-const num1Txt = document.getElementById("num1");
-const num2Txt = document.getElementById("num2");
+const Txt1 = document.getElementById("num1");
+const Txt2 = document.getElementById("num2");
+const Txt3 = document.getElementById("lName");
 const resultTxt = document.getElementById("sum");
-
+const resultTxt2 = document.getElementById("lastName");
 function concatenate() {
-    resultTxt.innerHTML = num1Txt.value + " " + num2Txt.value;
-}
+    resultTxt.innerHTML = Txt1.value + " " + Txt2.value; + " ";
+    resultTxt2.innerHTML = Txt3.value;
 
+}
 function clearEntries() {
-    num1Txt.value = "";
-    num2Txt.value = ""
+    Txt1.value="";
+    Txt2.value="";
+    Txt3.value="";
+
     resultTxt.innerHTML = "";
+    resultTxt2.innerHTML = "";
 }
